@@ -13,8 +13,13 @@ public class NumberToken implements Token {
         visitor.visit(this);
     }
 
+    public int getVal() {
+        return val;
+    }
+
     @Override
     public String toString() {
         return "NUMBER(" + String.valueOf(val) + ")";
     }
+
 }
