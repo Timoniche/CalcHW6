@@ -35,7 +35,7 @@ public class Tokenizer {
         for (char ch : input.toCharArray()) {
             state.processTokenChar(ch);
         }
-       state.actionsEOF();
+        state.actionsEOF();
         return tokens;
     }
 

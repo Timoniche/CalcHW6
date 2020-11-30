@@ -1,5 +1,6 @@
 package visitors;
 
+import lombok.NonNull;
 import token.BracesToken;
 import token.NumberToken;
 import token.OperationsToken;
@@ -47,7 +48,7 @@ public class CalcVisitor implements TokenVisitor {
         }
     }
 
-    public void visit(List<Token> tokens) {
+    public void visit(@NonNull List<Token> tokens) {
         for (Token token : tokens) {
             token.accept(this);
         }
