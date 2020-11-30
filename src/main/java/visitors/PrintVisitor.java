@@ -1,4 +1,4 @@
-package token.visitors;
+package visitors;
 
 import token.*;
 

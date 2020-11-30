@@ -1,4 +1,9 @@
-package token;
+package visitors;
+
+import token.BracesToken;
+import token.NumberToken;
+import token.OperationsToken;
+import token.Token;
 
 import java.util.List;
 
